@@ -2,10 +2,11 @@ from ultralytics import YOLO
 import cv2
 import os
 
-model = YOLO("./model/yolo11x.pt")
+# model = YOLO("./model/yolo11x.pt")
+model = YOLO("./runs/detect/retrain_simple/weights/best.pt")
 
 # 偵測多張圖片
-results = model("./images/")
+results = model("./images")
 os.makedirs("./results", exist_ok=True)
 
 # 逐張儲存
