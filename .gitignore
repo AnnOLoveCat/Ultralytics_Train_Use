@@ -13,8 +13,7 @@ model/*.pt
 model/*.pth
 
 # Results, outputs
-results/
-runs/detect/retrain_simple/weights
+runs
 outputs/
 
 # System files
