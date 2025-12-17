@@ -3,7 +3,7 @@ import cv2
 import os
 
 # model = YOLO("./model/yolo11x.pt")
-model = YOLO("./runs/detect/retrain_simple9/weights/best.pt")
+model = YOLO("./runs/detect/retrain_small_data/weights/best.pt")
 
 # 偵測多張圖片
 results = model("./images")

@@ -1,4 +1,6 @@
-train: images
-val: images
+path: ./dataset
+train: images/train
+val: images/val
+
 nc: 1
 names: ['cat']
