@@ -3,13 +3,13 @@ import cv2
 import os
 
 # 1. 載入訓練好的模型
-# 請修改路徑指向您訓練後的最佳權重檔
-model_path = "./runs/detect/train/weights/best.pt" 
+# 請確認路徑指向您 Advanced Training 跑出來的 best.pt
+model_path = "./runs/Final_Stage_Model/weights/best.pt" 
 model = YOLO(model_path)
 
-# 2. 指定測試圖片資料夾
-source_images = "./images"  # 待測圖片資料夾
-output_folder = "./results" # 結果輸出資料夾
+# 2. 設定路徑
+source_images = "./images/test"  # 待測圖片資料夾 (請自行準備測試圖)
+output_folder = "./results"      # 結果輸出資料夾
 
 # 3. 執行預測
 results = model(source_images)
