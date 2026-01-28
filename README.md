@@ -107,7 +107,7 @@ val: images/val
 # 類別設定 (請依實際情況修改)
 nc: 1            # 類別數量 (Number of Classes)
 names:
-  0: steel_beam  # 類別名稱
+  0: cat  # 類別名稱
 ```
 ## 5. Stage 1: Baseline Training (基礎訓練)
 目標：快速跑通流程，確認資料標記格式正確，硬體能跑。此階段不追求高準確率。\
